@@ -1,0 +1,25 @@
+---------- Date: 2016-05-19 22:31:01 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /bitbanks/index.php?route=account/token
+MOD DETAILS:
+   modFile   : /var/www/bitbanks/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+MOD DETAILS:
+   modFile   : /var/www/bitbanks/vqmod/xml/simple_blog_catalog.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : Opcrat
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $special; ?>
+
+----------------------------------------------------------------------
+
+

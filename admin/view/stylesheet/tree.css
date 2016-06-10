@@ -1,0 +1,440 @@
+.tree {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.tree li {
+  white-space: nowrap;
+}
+.tree li ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.tree-node {
+  height: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.tree-hit {
+  cursor: pointer;
+}
+.tree-expanded,
+.tree-collapsed,
+.tree-folder,
+.tree-file,
+.tree-checkbox,
+.tree-indent {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  vertical-align: top;
+  overflow: hidden;
+}
+.tree-expanded {
+  background: url('images/tree_icons.png') no-repeat -18px 0px;
+}
+.tree-expanded-hover {
+  background: url('images/tree_icons.png') no-repeat -50px 0px;
+}
+.tree-collapsed {
+  background: url('images/tree_icons.png') no-repeat 0px 0px;
+}
+.tree-collapsed-hover {
+  background: url('images/tree_icons.png') no-repeat -32px 0px;
+}
+.tree-lines .tree-expanded,
+.tree-lines .tree-root-first .tree-expanded {
+  background: url('images/tree_icons.png') no-repeat -144px 0;
+}
+.tree-lines .tree-collapsed,
+.tree-lines .tree-root-first .tree-collapsed {
+  background: url('images/tree_icons.png') no-repeat -128px 0;
+}
+.tree-lines .tree-node-last .tree-expanded,
+.tree-lines .tree-root-one .tree-expanded {
+  background: url('images/tree_icons.png') no-repeat -80px 0;
+}
+.tree-lines .tree-node-last .tree-collapsed,
+.tree-lines .tree-root-one .tree-collapsed {
+  background: url('images/tree_icons.png') no-repeat -64px 0;
+}
+.tree-line {
+  background: url('images/tree_icons.png') no-repeat -176px 0;
+}
+.tree-join {
+  background: url('images/tree_icons.png') no-repeat -192px 0;
+}
+.tree-joinbottom {
+  background: url('images/tree_icons.png') no-repeat -160px 0;
+}
+.tree-folder {
+  background: url('images/tree_icons.png') no-repeat -208px 0;
+}
+.tree-folder-open {
+  background: url('images/tree_icons.png') no-repeat -224px 0;
+}
+.tree-file {
+  background: url('images/tree_icons.png') no-repeat -240px 0;
+}
+.tree-loading {
+  background: url('images/loading.gif') no-repeat center center;
+}
+.tree-checkbox0 {
+  background: url('images/tree_icons.png') no-repeat -208px -18px;
+}
+.tree-checkbox1 {
+  background: url('images/tree_icons.png') no-repeat -224px -18px;
+}
+.tree-checkbox2 {
+  background: url('images/tree_icons.png') no-repeat -240px -18px;
+}
+.tree-title {
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  padding: 0 2px;
+  height: 18px;
+  line-height: 20px;
+  
+}
+.tree-node-proxy {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 2px 0 20px;
+  border-width: 1px;
+  border-style: solid;
+  z-index: 9900000;
+}
+.tree-dnd-icon {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  left: 2px;
+  top: 50%;
+  margin-top: -9px;
+}
+.tree-dnd-yes {
+  background: url('images/tree_icons.png') no-repeat -256px 0;
+}
+.tree-dnd-no {
+  background: url('images/tree_icons.png') no-repeat -256px -18px;
+}
+.tree-node-top {
+  border-top: 1px dotted red;
+}
+.tree-node-bottom {
+  border-bottom: 1px dotted red;
+}
+.tree-node-append .tree-title {
+  border: 1px dotted red;
+}
+.tree-editor {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  height: 14px !important;
+  height: 18px;
+  line-height: 14px;
+  padding: 1px 2px;
+  width: 80px;
+  position: absolute;
+  top: 0;
+}
+.tree-node-proxy {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #95B8E7;
+}
+.tree-node-hover {
+  background: #eaf2ff;
+  color: #000000;
+}
+.tree-node-selected {
+  background: #FBEC88;
+  color: #000000;
+}
+
+
+.left_node{
+
+    height: 25px;
+
+    
+
+    position: absolute;
+
+    
+
+    width: 25px;
+
+}
+
+.right_node{
+
+    height: 25px;
+
+    position: absolute;
+
+    width: 25px;
+
+}
+
+.undefined_node{left:53%; position: absolute; height: 25px; width: 25px;}
+
+.leftline.linefloor2{ 
+
+    background: url("images/left1.jpg") repeat scroll 0 0 transparent;
+
+    height: 37px;
+
+    position: absolute;
+
+    width: 170px;
+
+	left: -175px;
+
+	top: 25px;	
+
+}
+
+.rightline.linefloor2{ 
+
+    background: url("images/right1.jpg") repeat scroll 0 0 transparent;
+
+    height: 37px;
+
+    position: absolute;
+
+    width: 170px;
+
+	right: -175px;
+
+	top: 25px;	
+
+}
+
+.leftline.linefloor3{ 
+
+    background: url("images/left2.jpg") repeat scroll 0 0 transparent;
+
+    height: 35px;
+
+    left: -70px;
+
+    position: absolute;
+
+    top: 25px;
+
+    width: 75px;
+
+}
+
+.rightline.linefloor3{ 
+
+    background: url("images/right2.jpg") repeat scroll 0 0 transparent;
+
+    height: 35px;
+
+    position: absolute;
+
+    width: 75px;
+
+	right: -72px;
+
+	top: 24px;	
+
+}
+
+
+
+.leftline.linefloor4{ 
+
+    background: url("images/left3.jpg") repeat scroll 0 0 transparent;
+
+    height: 36px;
+
+    left: -33px;
+
+    position: absolute;
+
+    top: 23px;
+
+    width: 37px;
+
+}
+
+.rightline.linefloor4{ 
+
+    background: url("images/right3.jpg") repeat scroll 0 0 transparent;
+
+    height: 36px;
+
+    position: absolute;
+
+    width: 37px;
+
+	right: -33px;
+
+	top: 23px;	
+
+}
+
+
+
+.leftline.linefloor5{ 
+
+    background: url("images/left4.jpg") repeat scroll 0 0 transparent;
+
+	width: 20px;
+
+    height: 35px;
+
+    left: -14px;
+
+	top: 24px;
+
+    position: absolute;
+
+}
+
+.rightline.linefloor5{ 
+
+    background: url("images/right4.jpg") repeat scroll 0 0 transparent;
+
+    width: 20px;
+
+    height: 35px;
+
+	right: -14px;
+
+	top: 24px;
+
+    position: absolute;
+
+	
+
+}
+
+.leftline.linefloor6{ 
+
+    background: url("images/left5.jpg") repeat scroll 0 0 transparent;
+
+	width: 15px;
+
+    height: 35px;
+
+    left: -1px;
+
+	top: 24px;
+
+    position: absolute;
+
+}
+
+.rightline.linefloor6{ 
+
+    background: url("images/right5.jpg") repeat scroll 0 0 transparent;
+
+    width: 12px;
+
+    height: 35px;
+
+	right: -1px;
+
+	top: 24px;
+
+    position: absolute;
+
+	
+
+}
+
+ 
+
+.left_node.nodefloor2{
+
+	left: -210px;
+
+	top: 62px;
+
+}
+
+.right_node.nodefloor2{
+
+	right: -210px;
+
+	top: 62px;
+
+}
+
+.left_node.nodefloor3{
+
+    left: -90px;
+
+    top: 60px;
+
+}
+
+.right_node.nodefloor3{
+
+	right: -100px;
+
+	top: 60px;
+
+}
+
+
+
+.left_node.nodefloor4{
+
+    left: -50px;
+
+    top: 60px;
+
+}
+
+.right_node.nodefloor4{
+
+	right: -50px;
+
+	top: 60px;
+
+}
+
+.left_node.nodefloor5{
+
+    left: -28px;
+
+    top: 60px;
+
+}
+
+.right_node.nodefloor5{
+
+	right: -28px;
+
+	top: 60px;
+
+}
+
+.left_node.nodefloor6{
+
+    left: -14px;
+
+    top: 60px;
+
+}
+
+.right_node.nodefloor6{
+
+	right: -12px;
+
+	top: 60px;
+
+}
+
+.personal-tree{width:100%; height:360px;}
+.personal_contain{padding: 35px;padding-top: 0px}

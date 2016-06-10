@@ -1,0 +1,13 @@
+<?php
+// Heading
+$_['heading_title']         = 'Install';
+
+// Text
+$_['text_success']          = 'Success: Simple Support Extension related database install successfully!';
+$_['text_install_message']  = 'Missing Database Tables for this Extension, Please Click Here to upload it Now!';
+$_['text_upgrade']          = 'Install Database';
+
+// Error
+$_['error_database']        = 'Database Not Found!';
+
+?>
